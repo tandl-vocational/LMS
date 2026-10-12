@@ -1,0 +1,6 @@
+{
+  "name": "LMS Next - 公的職業訓練対応 次世代学習管理システム",
+  "description": "マイクロラーニング、日別カリキュラム管理、出席率80%判定、AI Copilot・AI Tutorを備えた公的職業訓練・専門講座対応LMS",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

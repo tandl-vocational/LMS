@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Noto Sans JP",
+    sans-serif;
+}
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 3px;
+}
+.legacy-screen > div > header {
+  position: relative;
+  top: auto;
+}
+@media (max-width: 767px) {
+  .legacy-screen {
+    overflow-x: hidden;
+  }
+  .legacy-screen header {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .legacy-screen header > div {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #report-preview,
+  #report-preview * {
+    visibility: visible;
+  }
+  #report-preview {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border: 0;
+  }
+}
